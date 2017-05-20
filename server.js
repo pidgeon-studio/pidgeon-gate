@@ -34,7 +34,7 @@ app.get('/', function (req, res) {
 
 app.post('/send', function (req, res) {
   var auth = req.body.auth
-  console.log(req.body)
+
   if (auth != 'pidgeon_e_boss') {
     return res.send('auth failed')
   }
@@ -46,7 +46,7 @@ app.post('/send', function (req, res) {
     id: id,
     recipient: recipient,
     message: message,
-    is_send: false
+    is_sent: false
   })
 
   sms.save(function (err, fluffy) {
