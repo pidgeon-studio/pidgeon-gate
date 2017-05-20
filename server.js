@@ -8,7 +8,7 @@ var util = require('util');
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-mongoose.connect(process.env.MONGOLAB_URI);
+mongoose.connect(process.env.MONGODB_URI);
 
 var smsSchema = {
   date_added: { type: Date, default: Date.now },
