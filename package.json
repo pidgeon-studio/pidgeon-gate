@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/sarbull/pidgeon-gate/issues"
   },
-  "homepage": "https://github.com/sarbull/pidgeon-gate#readme"
+  "homepage": "https://github.com/sarbull/pidgeon-gate#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
 }
